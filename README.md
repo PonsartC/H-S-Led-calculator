@@ -28,7 +28,7 @@ The principle for the seven segment display is the same. You have to find on the
 
 ## Make the calculator
 Now, it's just about logic. You can find the code in annex. Put conditions on your pins to turn on or turn off the led or the display depending on the calcul you got. For exemple, if(ans>2) then you turn the first and the second led ON. For this project, we alse add the possibility to show the decimals on the diplay.
-http://zupimages.net/viewer.php?id=18/22/67lq.jpg
-http://zupimages.net/viewer.php?id=18/22/8pqk.jpg
+![Alt Text] (http://zupimages.net/viewer.php?id=18/22/67lq.jpg)
+![Alt Text] (http://zupimages.net/viewer.php?id=18/22/8pqk.jpg)
 
 
