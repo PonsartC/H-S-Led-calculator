@@ -27,8 +27,16 @@ The pins on the raspberry have to be set as output. To do that, use the "gpio mo
 The principle for the seven segment display is the same. You have to find on the WEB the schema of your display to find which tab goes with which segment. 
 
 ## Make the calculator
+Controlling the LEDs remotely with SSH is pretty cool but the interface (console) isn't
+very user friendly and typing the commands every time is long and annoying. That's why we
+need a graphical interface for our project. We chose to build a web based app because it's compatible with all devices. The languages used are html (structure of the webpage), CSS (page's style) and php (interactions between pages and server).
+We just had to install a web server on the raspberry pi (HTTP server and PHP extension). We installed Apache and PHP5 with an apt-get command. The web files must be in our "/var/www/" directory.
+To control the LED with the php we can use the system ("BASH COMMAND");
 Now, it's just about logic. You can find the code in annex. Put conditions on your pins to turn on or turn off the led or the display depending on the calcul you got. For exemple, if(ans>2) then you turn the first and the second led ON. For this project, we alse add the possibility to show the decimals on the diplay.
 ![Alt Text](https://zupimages.net/up/18/22/67lq.jpg)
 ![Alt Text](https://zupimages.net/up/18/22/8pqk.jpg)
+
+We build three differents pages. Index.php is the base of the calculator. This page lets the user ask a calculus and send the data to the gpio.php page. (It also reset and prepare the gpio pins)
+The second page gets the calculus process it and choose the right pins. We also put a decimals button that work the same way. (Simple arithmetic logic).
 
 
